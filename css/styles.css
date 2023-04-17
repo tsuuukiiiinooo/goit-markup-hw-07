@@ -711,7 +711,6 @@ h3 {
     height: 40px;
     padding-left: 16px; 
     color: var(--white);
-    /* margin-right: 24px; */
     opacity: 0.3;
 }
 
@@ -822,6 +821,7 @@ h3 {
 }
 
 .block-subscribe {
+    justify-content: flex-start;
     gap: 16px;
 }
 
@@ -1085,6 +1085,14 @@ h3 {
         max-width: 582px;
     }
 
+    .logo-studio {
+        margin-right: 120px;
+    }
+
+    .menu {
+        gap: 40px;
+    }
+
 
     .open-menu-button {
         display: none;
@@ -1219,12 +1227,14 @@ h3 {
     }
 
     .logo-studio {
-        margin-right: 120px;
+        margin-right: 74px;
     }
 
-    .menu {
+    .menu-list-contacts {
+        display: flex;
         gap: 40px;
     }
+
     .section-main { 
         background: var(--navy-blue-color);
         background-image: linear-gradient( rgba(46, 47, 66, 0.7),  
