@@ -1085,9 +1085,13 @@ h3 {
         max-width: 582px;
     }
 
+    .open-menu-button {
+        display: none;
+    }
+
     .menu {
         display: flex;
-        gap: 40px;
+        gap: 12px;
     }
 
     .menu-link {
@@ -1103,9 +1107,9 @@ h3 {
     }
 
     .menu-list-contacts {
-        display: flex;
+        display: block;
         align-items: center;
-        gap: 40px;
+        gap: 12px;
     }
 
     .section-main { 
