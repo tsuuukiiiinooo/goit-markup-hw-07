@@ -170,25 +170,25 @@ h3 {
 
 .section-main {
     background: var(--navy-blue-color);
-    padding-top: 187px;
-    padding-bottom: 187px;
     background-image: linear-gradient( rgba(46, 47, 66, 0.7),  
     rgba(46, 47, 66, 0.7) ), 
-    url(../images/people-office.jpg);
+    url(../images/people-office-mobile.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    width: 1440px;
+    padding-top: 187px;
+    padding-bottom: 187px;
+    width: 100%;
     margin: 0 auto;
 }
 
 .main-headline {
     font-weight: 700;
-    font-size: 56px;
-    line-height: 1;
+    font-size: 36px;
+    line-height: 1.1;
     letter-spacing: 0.02em;
     color: var(--white);
-    width: 496px;
+    width: 320px;
     align-content: center;
     margin: 0 auto;
 
@@ -938,6 +938,16 @@ h3 {
     .list-of-empls {
         gap: 72px
     }
+
+    .section-main { 
+        background: var(--navy-blue-color);
+        background-image: linear-gradient( rgba(46, 47, 66, 0.7),  
+        rgba(46, 47, 66, 0.7) ), 
+        url(../images/people-office-mobile.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
 }
 
 @media screen and (min-width: 768px) {
@@ -948,6 +958,20 @@ h3 {
 
     .special-container {
         width: 582px;
+    }
+
+    .section-main { 
+        background: var(--navy-blue-color);
+        background-image: linear-gradient( rgba(46, 47, 66, 0.7),  
+        rgba(46, 47, 66, 0.7) ), 
+        url(../images/people-office-tablet.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    .main-headline {
+        font-size: 56px;
+        line-height: 1.1;
     }
 
     .headline-list {
@@ -992,6 +1016,16 @@ h3 {
     .section {
         padding-top: 120px;
         padding-bottom: 120px;
+    }
+
+    .section-main { 
+        background: var(--navy-blue-color);
+        background-image: linear-gradient( rgba(46, 47, 66, 0.7),  
+        rgba(46, 47, 66, 0.7) ), 
+        url(../images/people-office.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
     }
 
     .headline-list {
