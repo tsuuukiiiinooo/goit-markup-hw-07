@@ -262,6 +262,17 @@ img {
     margin-top: 48px;
 }
 
+.mobile-menu.is-hidden-menu {
+    transform: translateX(100%);
+}
+
+.mobile-menu.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+
 /* MAIN */
 
 h3 {
