@@ -1085,6 +1085,7 @@ h3 {
         max-width: 582px;
     }
 
+
     .open-menu-button {
         display: none;
     }
@@ -1110,6 +1111,10 @@ h3 {
         display: block;
         align-items: center;
         gap: 12px;
+    }
+
+    .main-header {
+        padding: 0;
     }
 
     .section-main { 
@@ -1213,6 +1218,13 @@ h3 {
         padding-bottom: 120px;
     }
 
+    .logo-studio {
+        margin-right: 120px;
+    }
+
+    .menu {
+        gap: 40px;
+    }
     .section-main { 
         background: var(--navy-blue-color);
         background-image: linear-gradient( rgba(46, 47, 66, 0.7),  
