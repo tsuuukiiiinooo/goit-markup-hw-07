@@ -15,7 +15,7 @@
     <body class="body-inf">
         <header class="main-header">
             <!-- Головна навігація по сайту -->
-            <!-- <div class="container page-header-container">
+            <div class="container page-header-container">
                 <nav class="page-nav">
                     <a class="logo-studio link" href="./index.html"><span class="logo-web">Web</span>Studio</a>
                     <ul class="list menu">
@@ -42,7 +42,71 @@
                         </ul>
                     </address>
                 </div>
-            </div> -->
+                <button type="button" class="open-menu-button">
+                    <svg class="icon-menu-hamburger" width="32" height="22">
+                        <use href="./images/icons.svg#icon-menu-hamburger"></use>
+                    </svg>
+                </button>
+            </div>
+            <div class="mobile-menu">
+                <button class=" mobile-menu-close-btn">
+                    <svg class="icon-close">
+                        <use href="./images/icons.svg#icon-close-black">
+                        </use>
+                    </svg>
+                </button>
+                <ul class="list mobile-menu">
+                    <li class="mobile-menu-item">
+                        <a class="link mobile-menu-link mobile-menu-link-static" href="">Studio</a>
+                    </li>
+                    <li class="mobile-menu-item"> 
+                        <a class="link mobile-menu-link" href="./portfolio.html">Portfolio</a>                    
+                    </li>
+                    <li class="mobile-menu-item">
+                        <a class="link mobile-menu-link" href="">Contacts</a>
+                    </li>
+                </ul>
+                <address class="addresses">
+                    <ul class="list mobile-menu-list-contacts">
+                        <li class="mobile-menu-contact-mail ">            
+                            <a class="link mobile-menu-contact-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                        </li>
+                        <li class="mobile-menu-contact-phone-number">
+                            <a class="link mobile-menu-contact-link" href="tel:+110001111111">+11 (000) 111-11-11</a>
+                        </li>
+                    </ul>
+                </address>
+                <ul class="list social-list">
+                    <li class="social-item">
+                        <a  class="social-link" href="">
+                            <svg class="social-icon">
+                                <use href="./images/icons.svg#icon-instagram"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="social-item">
+                        <a class="social-link" href="">
+                            <svg class="social-icon">
+                                <use href="./images/icons.svg#icon-twitter"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="social-item">
+                        <a class="social-link" href="">
+                            <svg class="social-icon">
+                                <use href="./images/icons.svg#icon-facebook"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="social-item">
+                        <a class="social-link" href="">
+                            <svg class="social-icon">
+                                <use href="./images/icons.svg#icon-linkedin"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </header>
         <main class="main">
             <section class="section-main">
@@ -100,13 +164,34 @@
                     <h2 class="not-main-headline">What are we doing</h2>
                     <ul class="list list-imgs-whtrwedng">
                         <li class="img">
-                            <img src="./images/gall/1.jpg" alt="popularity" width="360" height="300"/>
+                            <img 
+                            src="./images/gall/1.jpg" 
+                            alt="popularity" 
+                            srcset="
+                            ./images/gall/1.jpg 1x, 
+                            ./images/gall/1-2x.jpg 2x
+                            "
+                            width="360" height="300"/>
                         </li>
                         <li class="img">
-                            <img src="./images/gall/2.jpg" alt="texting" width="360" height="300"/>
+                            <img 
+                            src="./images/gall/2.jpg" 
+                            alt="texting" 
+                            srcset="
+                            ./images/gall/2.jpg 1x, 
+                            ./images/gall/2-2x.jpg 2x
+                            "
+                            width="360" height="300"/>
                         </li>
                         <li class="img">
-                            <img src="./images/gall/3.jpg" alt="news" width="360" height="300"/>
+                            <img 
+                            src="./images/gall/3.jpg" 
+                            alt="news" 
+                            srcset="
+                            ./images/gall/3.jpg 1x, 
+                            ./images/gall/3-2x.jpg 2x
+                            "
+                            width="360" height="300"/>
                         </li>
                     </ul>                    
                 </div>
@@ -116,7 +201,14 @@
                     <h2 class="our-team-headline">Our Team</h2>
                     <ul class="list list-of-empls">
                         <li class="card-of-emp img">
-                            <img src="./images/emp/4.jpg" alt="Mark Guerrero photo" width="264"/>
+                            <img 
+                            src="./images/emp/mark-guerrero.jpg" 
+                            alt="Mark Guerrero photo" 
+                            srcset="
+                            ./images/emp/mark-guerrero.jpg 1x, 
+                            ./images/emp/mark-guerrero-2x.jpg 2x
+                            "
+                            width="264"/>
                             <div class="text-about-empl">
                                 <h3 class="name-emp">Mark Guerrero</h3>
                                 <p class="job-tittle">Product Designer</p>
@@ -153,7 +245,13 @@
                             </div>
                         </li>
                         <li class="card-of-emp img">
-                            <img src="./images/emp/5.jpg" alt="Tom Ford photo" width="264" />
+                            <img src="./images/emp/tom-ford.jpg" 
+                            alt="Tom Ford photo"
+                            srcset="
+                            ./images/emp/tom-ford.jpg 1x, 
+                            ./images/emp/tom-ford-2x.jpg 2x
+                            "
+                            width="264" />
                             <div class="text-about-empl">
                                 <h3 class="name-emp">Tom Ford</h3>
                                 <p class="job-tittle">Frontend Developer</p>
@@ -190,7 +288,14 @@
                             </div>
                         </li>
                         <li class="card-of-emp img">
-                            <img src="./images/emp/6.jpg" alt="Camila Garcia photo" width="264" />
+                            <img 
+                            src="./images/emp/camilia-garcia.jpg" 
+                            alt="Camila Garcia photo" 
+                            srcset="
+                            ./images/emp/camilia-garcia.jpg 1x, 
+                            ./images/emp/camilia-garcia-2x.jpg 2x
+                            "
+                            width="264" />
                             <div class="text-about-empl">
                                 <h3 class="name-emp">Camila Garcia</h3>
                                 <p class="job-tittle">Marketing</p> 
@@ -228,7 +333,13 @@
                             </div>
                         </li>
                         <li class="card-of-emp img">
-                            <img src="./images/emp/7.jpg" alt="Daniel Wilson photo" width="264" />
+                            <img src="./images/emp/daniel-wilson.jpg" 
+                            alt="Daniel Wilson photo"
+                            srcset="
+                            ./images/emp/daniel-wilson.jpg 1x, 
+                            ./images/emp/daniel-wilson-2x.jpg 2x
+                            " 
+                            width="264" />
                             <div class="text-about-empl">
                                 <h3 class="name-emp">Daniel Wilson</h3>
                                 <p class="job-tittle">UI Designer</p>
