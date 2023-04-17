@@ -58,7 +58,7 @@ img {
 
 .container {
     width: 100%;
-    /* padding: 0 15px; */
+    padding: 0 15px;
     margin: 0 auto;
 }
 
@@ -257,7 +257,7 @@ img {
 
 .mm-social-list {
     display: flex;
-    gap: 56px;
+    gap: 25px;
     justify-content: center;
     margin-top: 48px;
 }
@@ -270,6 +270,10 @@ img {
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
+}
+
+.mobile-menu-contact-phone-number {
+    padding-top: 40px;
 }
 
 
@@ -287,9 +291,9 @@ h3 {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    padding-top: 187px;
-    padding-bottom: 187px;
-    width: 100%;
+    padding-top: 112px;
+    padding-bottom: 112px;
+    /* width: 320px; */
     margin: 0 auto;
 }
 
@@ -309,9 +313,9 @@ h3 {
     line-height: 1.1;
     letter-spacing: 0.02em;
     color: var(--white);
-    width: 320px;
     align-content: center;
     margin: 0 auto;
+    text-align: center;
 
 }
 
@@ -712,6 +716,7 @@ h3 {
     padding-left: 16px; 
     color: var(--white);
     opacity: 0.3;
+    margin-bottom: 16px;
 }
 
 .email-subscribe::placeholder {
@@ -785,7 +790,7 @@ h3 {
     color: var(--cornflower);
     max-width: 264px;
     margin: 0 auto;
-    padding-top: 17px;
+    margin-top: 17px;
 }
 
 .logo-and-descrp {
@@ -852,9 +857,7 @@ h3 {
 .modal {
     position: relative;
     width: 100%;
-    height: 100%;
     max-width: 408px;
-    max-height: 584px;
     background-color: var(--dairy);
     overflow: auto;
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -1073,6 +1076,21 @@ h3 {
     .list-of-empls {
         gap: 72px
     }
+
+    .modal {
+        height: 100%;
+        max-height: 584px;
+    }
+
+    .main-headline {
+        width: 320px;
+    }
+    .modal-btn {
+        margin-top: 72px;
+        }
+    .about-us {
+        gap: 72px;
+    }
 }
 
 @media screen and (min-width: 768px) {
@@ -1081,12 +1099,20 @@ h3 {
         max-width: 738px;
     }
 
+    .list-about-us {
+        font-weight: 500;
+    }
+
     .special-container {
         max-width: 582px;
     }
 
     .logo-studio {
         margin-right: 120px;
+    }
+
+    .email-subscribe {
+        margin-bottom: 0;
     }
 
     .menu {
@@ -1125,6 +1151,13 @@ h3 {
         padding: 0;
     }
 
+    .contact-link {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 1.1;
+        letter-spacing: 0.04em;
+
+    }
     .section-main { 
         background: var(--navy-blue-color);
         background-image: linear-gradient( rgba(46, 47, 66, 0.7),  
@@ -1133,6 +1166,7 @@ h3 {
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
+
     }
 
     @media (min-device-pixel-ratio: 2),
@@ -1213,17 +1247,28 @@ h3 {
     .footer-container{
         column-gap: 24px;
         row-gap: 72px;
+        justify-content: left;
     }
 }
 
 @media screen and (min-width: 1158px) {
     .container {
-        max-width: 1128px;
+        max-width: 1158px;
+    }
+
+    
+
+    .menu {
+        gap: 40px;
     }
 
     .section {
         padding-top: 120px;
         padding-bottom: 120px;
+    }
+
+    .section-about-us {
+        padding-bottom: 0;
     }
 
     .logo-studio {
@@ -1243,7 +1288,11 @@ h3 {
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
-    }
+        width: 1440px;
+        margin: 0 auto; 
+        padding-top: 187px;
+        padding-bottom: 187px;
+       }
 
     @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
@@ -1284,7 +1333,7 @@ h3 {
     }
 
     .section-wht-they-doing {
-        display: flex;
+        display: block;
         text-align: center;
     }
 
