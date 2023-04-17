@@ -687,10 +687,18 @@ h3 {
     padding-bottom: 97px;
     padding-top: 96px;
     text-align: center;
+    margin-right: auto;
 }
 
-/* .footer-container {
-} */
+.footer-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 72px;
+    align-items: flex-start;
+    padding-left: 60px;
+}
 
 .footer-text {
     font-weight: 400;
@@ -1067,8 +1075,35 @@ h3 {
         text-align: left;
     }
 
+    .logo-and-descrp {
+        margin-bottom: 0;
+    }
+
     .footer-text {
         width: 264px;
+    }
+
+    .logo-studio-footer {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    }
+
+    .block-social-media{
+        margin-bottom: 0;
+    }
+
+    .email-form {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        margin-left: auto;
+        gap: 0;
+    }
+
+    .email-subscribe {
+        width: 264px;
+        margin-right: 24px;
     }
 }
 
